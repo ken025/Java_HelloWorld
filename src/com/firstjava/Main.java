@@ -1,6 +1,7 @@
 package com.firstjava;
 
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
 
@@ -69,6 +70,69 @@ public class Main {
         System.out.println(message.indexOf("W"));
         System.out.println(message.replace("o", "0"));
         System.out.println(message.toLowerCase());
+
+//   ----- Arrays ----
+//                             specify size
+        int[] numbers = new int[5];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        System.out.println(numbers); // prints the address
+        System.out.println(Arrays.toString(numbers));
+
+        int[] nms = {2, 12, 4, 1, 5};
+        System.out.println(nms.length);
+
+        Arrays.sort(nms);
+        System.out.println(Arrays.toString(nms));
+
+//        Multi Dimensional Array
+
+//                                 [rows] [columns]
+        int[][] dimensions = new int[2][3];
+        dimensions[0][0] = 1;
+        System.out.println(Arrays.deepToString(dimensions));
+
+        int[][] dmnsions = {{2, 4, 6}, {3, 6, 9}};
+        System.out.println(Arrays.deepToString(dmnsions));
+
+//   ----- Constants -----
+
+// when we don't want out values to change
+        final float pi = 3.14F;
+//        pi = 2;  => not allowed
+
+//   ----- Arithmetic Expressions -----
+        int addition = 10 + 5;
+
+        int division = 10 / 3; // returns whole number = 3
+        var result = (double)10 / (double)3;
+        System.out.println(result);
+
+        int increment = 1;
+        increment++; // increments by 1
+        System.out.println(increment);
+
+        int y = 1;
+        int z = y++;
+        System.out.println(y);
+        System.out.println(z);
+
+        int x = 1;
+//      x = x + 2; is the same as:
+        x += 2;
+//      x -= 2 | x *= 2 | x /= 2
+        System.out.println(x);
+
+//   ----- Casting -----
+        double ex = 1.1;
+        int why = (int)ex + 2;
+        System.out.println(why);
+
+// we always receive user input as a string so we ned to convert them into their numerical representation
+        String n = "1";
+        int l = Integer.parseInt(n) + 4;
+        System.out.println(l);
+
 
     }
 }
