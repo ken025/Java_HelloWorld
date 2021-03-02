@@ -5,6 +5,7 @@ import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 //    public = accessible throughout the program
@@ -159,5 +160,18 @@ public class Main {
 
         String rest = NumberFormat.getPercentInstance().format(0.1);
         System.out.println(rest);
+
+//   ----- Reading Input -----
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        byte yourAge = scanner.nextByte();
+        System.out.println("You are " + yourAge);
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+//                            returns full input . trims any whitespaces
+        String yourName = scan.nextLine().trim();
+        System.out.println("You are " + yourName);
     }
 }
