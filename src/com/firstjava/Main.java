@@ -1,6 +1,7 @@
 package com.firstjava;
 
 import java.awt.*;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
@@ -133,6 +134,30 @@ public class Main {
         int l = Integer.parseInt(n) + 4;
         System.out.println(l);
 
+//  ----- Math Class -----
+        int rounded = Math.round(1.1F);
+        System.out.println(rounded);
 
+        int ceiling = (int)Math.ceil(1.1F);
+        System.out.println(ceiling);
+
+        int floor = (int)Math.floor(1.1F);
+        System.out.println(floor);
+
+        int max = Math.max(1, 5);
+        System.out.println(max);
+
+        int random = (int) Math.round(Math.random() * 100);
+        System.out.println(random);
+
+//   ----- Formatting Numbers -----
+
+//      factory method
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        String res = currency.format(12345.91);
+        System.out.println(res);
+
+        String rest = NumberFormat.getPercentInstance().format(0.1);
+        System.out.println(rest);
     }
 }
