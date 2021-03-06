@@ -173,5 +173,21 @@ public class Main {
 //                            returns full input . trims any whitespaces
         String yourName = scan.nextLine().trim();
         System.out.println("You are " + yourName);
+
+        //    ----- Comparison Operators -----
+
+        int o = 1;
+        int t = 2;
+        System.out.println(x <= y);
+
+        int temp = 12;
+        boolean isWarm = temp > 20 && temp < 30;
+        System.out.println(isWarm);
+
+        boolean highIncome = true;
+        boolean goodCredit = true;
+        boolean isEligible = highIncome || goodCredit;
+
     }
+
 }
