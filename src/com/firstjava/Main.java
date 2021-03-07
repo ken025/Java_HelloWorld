@@ -11,7 +11,7 @@ public class Main {
 //    public = accessible throughout the program
 //    void = method won't return a value
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 
 //  ----- Printing something -----
         System.out.println("Hello World");
@@ -107,7 +107,7 @@ public class Main {
         int addition = 10 + 5;
 
         int division = 10 / 3; // returns whole number = 3
-        var result = (double)10 / (double)3;
+        var result = (double) 10 / (double) 3;
         System.out.println(result);
 
         int increment = 1;
@@ -127,7 +127,7 @@ public class Main {
 
 //   ----- Casting -----
         double ex = 1.1;
-        int why = (int)ex + 2;
+        int why = (int) ex + 2;
         System.out.println(why);
 
 // we always receive user input as a string so we ned to convert them into their numerical representation
@@ -139,10 +139,10 @@ public class Main {
         int rounded = Math.round(1.1F);
         System.out.println(rounded);
 
-        int ceiling = (int)Math.ceil(1.1F);
+        int ceiling = (int) Math.ceil(1.1F);
         System.out.println(ceiling);
 
-        int floor = (int)Math.floor(1.1F);
+        int floor = (int) Math.floor(1.1F);
         System.out.println(floor);
 
         int max = Math.max(1, 5);
@@ -162,17 +162,17 @@ public class Main {
         System.out.println(rest);
 
 //   ----- Reading Input -----
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your age: ");
-        byte yourAge = scanner.nextByte();
-        System.out.println("You are " + yourAge);
-
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter your age: ");
-//                            returns full input . trims any whitespaces
-        String yourName = scan.nextLine().trim();
-        System.out.println("You are " + yourName);
+//
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter your age: ");
+//        byte yourAge = scanner.nextByte();
+//        System.out.println("You are " + yourAge);
+//
+//        Scanner scan = new Scanner(System.in);
+//        System.out.print("Enter your age: ");
+////                            returns full input . trims any whitespaces
+//        String yourName = scan.nextLine().trim();
+//        System.out.println("You are " + yourName);
 
         //    ----- Comparison Operators -----
 
@@ -188,6 +188,20 @@ public class Main {
         boolean goodCredit = true;
         boolean isEligible = highIncome || goodCredit;
 
+//   ----- If Statements -----
+        if (temp > 30) {
+            System.out.println("It's hot out!");
+        } else if (temp > 20 && temp <= 30) {
+            System.out.println("Beautiful Day!");
+        } else {
+            System.out.println("It's cold!");
+        }
+
+        int income = 120_000;
+        boolean hasHighIncome = (income > 100_000);
+        System.out.println(hasHighIncome);
+
+
+        }
     }
 
-}
