@@ -1,5 +1,8 @@
 package com.firstjava;
 
+import org.w3c.dom.ls.LSInput;
+import org.w3c.dom.ls.LSOutput;
+
 import java.awt.*;
 import java.text.NumberFormat;
 import java.util.Arrays;
@@ -219,6 +222,55 @@ public class Main {
             default:
                 System.out.println("You are a guest");
         }
+
+//   ----- For Loops -----
+        for (int i = 0; i < 5; i++){
+            System.out.println(i);
         }
+
+        System.out.println();
+
+        for (int i = 5; i > 0; i--){
+            System.out.println(i);
+        }
+
+        System.out.println();
+
+        int i = 0;
+        while (i > 0){
+            System.out.println(i);
+            i--;
+        }
+
+//        String input = "";
+//        Scanner scanner = new Scanner(System.in);
+//// we cannot use comparison operators with reference types
+//// because it compares the address of the object not the value
+//        while (!input.equals("quit")){
+//            System.out.println("Input: (enter 'quit' to exit) ");
+//            input = scanner.next().toLowerCase();
+//            if(input.equals("pass"))
+//                continue;
+//            if (input.equals("quit"))
+//                break;
+//            System.out.println(input );
+//        }
+
+//        do while
+//        do {
+//            System.out.println("Input: ");
+//            input = scanner.next().toLowerCase();
+//            System.out.println(input);
+//        }while (!input.equals("quit"));
+
+//   ----- For Each Loop -----
+//   used to iterate through arrays or collections
+
+    String[] fruits = { "Apple", "Mango", "Orange"};
+
+    for (String fruit : fruits)
+        System.out.println(fruit);
+
+    }
     }
 
