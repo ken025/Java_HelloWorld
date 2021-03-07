@@ -197,11 +197,28 @@ public class Main {
             System.out.println("It's cold!");
         }
 
-        int income = 120_000;
+        int income = 100_000;
         boolean hasHighIncome = (income > 100_000);
         System.out.println(hasHighIncome);
 
+//        Ternary Operator
+//                         condition       if true : if false
+        String className = hasHighIncome ? "First" : "Economy";
+        System.out.println(className);
 
+//  ----- Switch Case ------
+        String role = "admin";
+
+        switch (role){
+            case "admin":
+                System.out.println("Your are an admin");
+                break;
+            case "moderator":
+                System.out.println("You are a moderator");
+                break;
+            default:
+                System.out.println("You are a guest");
+        }
         }
     }
 
